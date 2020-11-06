@@ -1,0 +1,18 @@
+2020-10-22 13:17:58,852 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Fujitsu\Rzk - vezbe\wildfly-21.0.0.Final\standalone\deployments
+2020-10-22 13:17:58,929 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-10-22 13:17:59,027 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.2.Final (Apache CXF 3.3.7) 
+2020-10-22 13:17:59,169 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-10-22 13:17:59,172 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 21.0.0.Final (WildFly Core 13.0.1.Final) started in 5016ms - Started 317 of 579 services (370 services are lazy, passive or on-demand)
+2020-10-22 13:17:59,179 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-10-22 13:17:59,182 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-10-22 13:31:07,665 INFO  [org.jboss.as.repository] (External Management Request Threads -- 1) WFLYDR0001: Content added at location C:\Users\Fujitsu\Rzk - vezbe\wildfly-21.0.0.Final\standalone\data\content\0e\c8bfce16c8bd18d6cb598b1147aa145be1408f\content
+2020-10-22 13:31:07,678 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.22.jar" (runtime-name: "mysql-connector-java-8.0.22.jar")
+2020-10-22 13:31:08,458 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2020-10-22 13:31:08,478 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.22.jar
+2020-10-22 13:31:08,867 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.4.Final
+2020-10-22 13:31:08,912 INFO  [org.infinispan.CONFIG] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-10-22 13:31:08,913 INFO  [org.infinispan.CONFIG] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-10-22 13:31:08,980 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2020-10-22 13:31:09,147 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2020-10-22 13:31:09,227 INFO  [org.jboss.as.server] (External Management Request Threads -- 1) WFLYSRV0010: Deployed "mysql-connector-java-8.0.22.jar" (runtime-name : "mysql-connector-java-8.0.22.jar")
+2020-10-22 13:43:32,529 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/mysql]
