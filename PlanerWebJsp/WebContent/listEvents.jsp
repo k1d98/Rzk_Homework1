@@ -16,8 +16,9 @@
 		<input type="date" name="datum" id="datum">
 		<input type="submit" value="prikazi eventove">
 	</form>
-	<table>
-    <!-- here should go some titles... -->
+	<table border="1">
+	<c:if test="${datum1 != null}">
+    Dogadjaji za dan ${datum1}
     <tr>
         <th>Opis</th>
         <th>Pocetak</th>
@@ -30,16 +31,17 @@
             <c:out value="${event.description}" />
         </td>
         <td>
-            <c:out value="${event.fromDate}" />
+            ${event.fromDate.getHours()} : ${event.fromDate.getMinutes()}
         </td>
         <td>
-            <c:out value="${event.toDate}" />
+             ${event.toDate.getHours()} : ${event.toDate.getMinutes()}
         </td>
         <td>
             <c:out value="${event.eventType.name}" />
         </td>
     </tr>
     </c:forEach>
+    </c:if>
 </table>
 </body>
 </html>

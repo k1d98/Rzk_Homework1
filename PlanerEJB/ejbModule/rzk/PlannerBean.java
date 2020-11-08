@@ -69,7 +69,7 @@ public class PlannerBean implements PlannerBeanRemote {
 		e.setToDate(toDate);
 		User u = getUser();
 		
-		EventType et = etb.getTypes().get(eventTypeID);
+		EventType et = getType(eventTypeID);
 		
 		e.setEventType(et);
 		e.setUser(u);
@@ -82,6 +82,12 @@ public class PlannerBean implements PlannerBeanRemote {
 		}catch(Exception ex) {
 			return false;
 		}
+	}
+
+	private EventType getType(int eventTypeID) {
+		Query q = em.createQuery("SELECT et FROM EventType et WHERE et.id LIKE :id");
+		q.setParameter("id", eventTypeID);
+		return (EventType) q.getResultList().get(0);
 	}
 
 	@Override

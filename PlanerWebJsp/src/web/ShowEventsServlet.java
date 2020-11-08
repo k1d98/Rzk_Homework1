@@ -42,6 +42,7 @@ public class ShowEventsServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PlannerBeanRemote bean = (PlannerBeanRemote) request.getSession().getAttribute("bean");
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		request.setAttribute("datum1", request.getParameter("datum") );
 		
 		Date d;
 		try {
